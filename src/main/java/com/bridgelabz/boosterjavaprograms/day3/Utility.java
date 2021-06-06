@@ -42,5 +42,31 @@ public class Utility {
         }
         return number;
     }
+    public static String TaylorSeries(double radian,int power,double currentTerm,double sinX,int no) {
+        for (int i = 1; i < no; i++) {
+            //even term is negative for that use -Math
+            if (i % 2 == 0) {
+                currentTerm = -Math.pow(radian, power) / getFact(power);
+            } else
+                {
+                //odd term is positive for that use Math
+                currentTerm = Math.pow(radian, power) / getFact(power);
+                }
+            sinX = sinX + currentTerm;
+            power = power + 2;
+        }
+        System.out.println("sinX="+sinX);
+        return "";
+    }
+    //To get factorials
+    static int getFact(int no)
+    {
+        int fact = 1;
+        for (int i = 1; i <= no; i++)
+        {
+            fact = fact * i;
+        }
+        return fact;
+    }
 }
 
