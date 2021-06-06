@@ -3,8 +3,6 @@
 
 package com.bridgelabz.boosterjavaprograms.day3;
 
-import com.bridgelabz.boosterjavaprograms.util.Utility.day3.Utility;
-
 import java.util.Scanner;
 
 public class PrimeNum {

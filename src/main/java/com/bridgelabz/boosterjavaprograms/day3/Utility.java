@@ -1,9 +1,8 @@
-package com.bridgelabz.boosterjavaprograms.util.Utility.day3;
+package com.bridgelabz.boosterjavaprograms.day3;
 
-public class Utility
-{
-    public static void PrimeNum(int n1,int n2,int n3,int flag,int i)
-    {
+
+public class Utility {
+    public static void PrimeNum(int n1, int n2, int n3, int flag, int i) {
         for (i = n1; i <= n2; i++) {
             if (i == 1 || i == 0)
                 continue;
@@ -21,3 +20,4 @@ public class Utility
         }
     }
 }
+
