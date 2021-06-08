@@ -1,6 +1,5 @@
+//Program to find Sum of all elements from Array which located on even position
 package com.bridgelabz.boosterjavaprograms.day3;
-
-
 
 public class SumEven {
     public static void main(String[] args)
