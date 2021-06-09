@@ -18,7 +18,6 @@ public class NumToWord {
             return "Minus" + convert(-num);
         }
 
-
         if (num < 20) {
             return units[num];
         }
@@ -26,6 +25,9 @@ public class NumToWord {
             return tens[num / 10] + ((num % 10 != 0) ? "  " : "  ") + units[num % 10];
         } else if (num < 1000) {
             return units[num / 100] + " Hundred and" + ((num % 100 != 0) ? " " : " ") + convert(num % 100);
+        }if(num<1000){
+            return units[num/1000] + " Thousand " +((num%1000!=0)? "" : "") + convert(num%1000);
+
         }
 
         return "";
@@ -33,7 +35,7 @@ public class NumToWord {
 
 
     public static void main(String[] args) {
-int num;
+        int num;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Num");
          num = sc.nextInt();
