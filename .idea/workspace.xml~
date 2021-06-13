@@ -43,7 +43,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Array/src/primeNum.java" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.TwoStringAnagram">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration name="AddOddElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.boosterjavaprograms.exta.AddOddElements" />
       <module name="BoosterJavaPrograms" />
@@ -57,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Atm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.boosterjavaprograms.exta.Atm" />
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.boosterjavaprograms.day8.BubbleSort" />
       <module name="BoosterJavaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.boosterjavaprograms.exta.*" />
+          <option name="PATTERN" value="com.bridgelabz.boosterjavaprograms.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedList_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.boosterjavaprograms.exta.LinkedList_1" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.boosterjavaprograms.day8.MergeSort" />
       <module name="BoosterJavaPrograms" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bridgelabz.boosterjavaprograms.exta.*" />
+          <option name="PATTERN" value="com.bridgelabz.boosterjavaprograms.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.TwoStringAnagram" />
         <item itemvalue="Application.AddOddElements" />
         <item itemvalue="Application.StackAary1" />
-        <item itemvalue="Application.Atm" />
-        <item itemvalue="Application.LinkedList_1" />
       </list>
     </recent_temporary>
   </component>
