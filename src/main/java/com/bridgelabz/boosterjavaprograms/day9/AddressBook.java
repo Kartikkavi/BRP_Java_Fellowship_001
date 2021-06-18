@@ -11,6 +11,7 @@ public class AddressBook
     static String email;
     static String  pNum;
     static String pass;
+    static String cName;
 
 
     public static String firstName(){
@@ -25,6 +26,8 @@ public class AddressBook
         lName = sc2.nextLine();
         return lName;
     }
+
+
     public static String emailId(){
         Scanner sc3 = new Scanner(System.in);
         System.out.println("Enter your Email id:");
@@ -43,6 +46,19 @@ public class AddressBook
         pNum = sc5.nextLine();
         return pNum;
     }
+    public static String componyName(){
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Enter your first name first letter must be Capital");
+        int choice = 0;
+        switch (choice){
+            case 1: cName = sc1.nextLine();
+                break;
+            default:
+                System.out.println("Dont want to fill");
+        }
+
+        return cName;
+    }
     public static void main(String[] args) {
         Boolean firstName = Pattern.matches("^[A-Z]{1}[a-z]{2,}",AddressBook.firstName());
 
@@ -54,7 +70,7 @@ public class AddressBook
 
         Boolean phoneNum = Pattern.matches("^\\d{10}$",AddressBook.phoneNum());
 
-
+        Boolean componyName = Pattern.matches("^[A-Z]{1}[a-z]{2,}",AddressBook.componyName());
 
         if (firstName == true) {
             System.out.println("First Name: " + fName);
@@ -80,6 +96,12 @@ public class AddressBook
 
         if (phoneNum == true) {
             System.out.println("Mobile number: " + pNum);
+
+        }
+        else {
+            System.out.println("Invalid");}
+        if (componyName == true) {
+            System.out.println("ComponyName: " + cName);
 
         }
         else {
