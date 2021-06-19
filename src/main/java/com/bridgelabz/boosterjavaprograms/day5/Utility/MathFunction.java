@@ -35,6 +35,8 @@ public class MathFunction {
         System.out.println("Min String==="  +array[0]);
         return "";
     }
+
+    //Method to find max and min from Array
     public static void MaxMinIntArray(int[] array)
     {
         int smalest =array[0];
@@ -55,4 +57,14 @@ public class MathFunction {
         System.out.println("1st smallest value= "+smalest);
     }
 
+    //Method to get factorial of number
+    public static int Fact(int number,int i,int fact)
+    {
+        for(i=1;i<=number;i++)
+        {
+            fact = fact*i;
+        }
+        System.out.println("Factorial of " + number+ " is : "+fact);
+        return fact;
+    }
 }
