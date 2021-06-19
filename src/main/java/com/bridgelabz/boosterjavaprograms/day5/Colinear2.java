@@ -3,7 +3,8 @@ package com.bridgelabz.boosterjavaprograms.day5;
 import java.util.Scanner;
 
 public class Colinear2 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         int x1,x2,x3,y1,y2,y3;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the vale of x1,x2,x3,y1,y2,y3");

@@ -67,4 +67,15 @@ public class MathFunction {
         System.out.println("Factorial of " + number+ " is : "+fact);
         return fact;
     }
+    public static String Collinear(int x1,int x2,int x3,int y1,int y2,int y3){
+        //Calculating the area of triangle and check that 3 points are Colinear or not
+        int a = x1 * (y2 - y3) + x2 * (y3 - y1) + x3*(y1 -y2);
+        if (a==0)
+            System.out.println("Yes points are Colinear");
+        else
+            System.out.println("No points are not colinear");
+        return "";
+    }
+
+
 }
