@@ -6,33 +6,31 @@ import java.util.regex.Pattern;
 public class A {
      static String ccName;
 
-
-
-
-    public static String compName(){
+     public static String compName(){
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter 1 or 2");
         int choice =sc1.nextInt();
-       // int choice =0;
+
 
         switch (choice) {
-            case 1:
+            case 0:
                 ccName = sc1.next();
+                System.out.println("Compony Name="+ccName);
                 break;
-            case 2:
+            case 1:
 
-                System.out.println("NO");
+                System.out.println("Not intrested");
+                break;
+
+            default:
+                System.out.println("Invalid");
                 break;
         }
         return ccName;
     }
     public static void main(String[] args) {
-        Boolean compName = Pattern.matches("^[A-Z]{1}[a-z]{2,}",A.compName());
-        if (compName==true){
-            System.out.println("Compony Name="+ccName);
-        }else {
-            System.out.println("Invalid");
-        }
+
+        A.compName();
 
 
     }

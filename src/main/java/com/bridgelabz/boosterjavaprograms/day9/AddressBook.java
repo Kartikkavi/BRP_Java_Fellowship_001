@@ -1,19 +1,20 @@
+//Program to create the Address book.
 package com.bridgelabz.boosterjavaprograms.day9;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
+
 public class AddressBook
 {
-
     static String fName;
     static String lName;
     static String email;
     static String  pNum;
     static String pass;
-    static String cName;
+    static String ccName;
 
-
+//Creating an function for every section of Address book.
     public static String firstName(){
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter your first name first letter must be Capital");
@@ -26,7 +27,6 @@ public class AddressBook
         lName = sc2.nextLine();
         return lName;
     }
-
 
     public static String emailId(){
         Scanner sc3 = new Scanner(System.in);
@@ -46,18 +46,27 @@ public class AddressBook
         pNum = sc5.nextLine();
         return pNum;
     }
-    public static String componyName(){
+    public static String compName(){
         Scanner sc1 = new Scanner(System.in);
-        System.out.println("Enter your first name first letter must be Capital");
-        int choice = 0;
-        switch (choice){
-            case 1: cName = sc1.nextLine();
-                break;
-            default:
-                System.out.println("Dont want to fill");
-        }
+        System.out.println("Its an optional part if you want to share Compony Name press 0 / press 1 for not inrested");
+        int choice =sc1.nextInt();
 
-        return cName;
+
+        switch (choice) {
+            case 0:
+                ccName = sc1.next();
+                System.out.println("Compony Name="+ccName);
+                break;
+            case 1:
+
+                System.out.println("Not intrested");
+                break;
+
+            default:
+                System.out.println("Invalid");
+                break;
+        }
+        return ccName;
     }
     public static void main(String[] args) {
         Boolean firstName = Pattern.matches("^[A-Z]{1}[a-z]{2,}",AddressBook.firstName());
@@ -70,7 +79,9 @@ public class AddressBook
 
         Boolean phoneNum = Pattern.matches("^\\d{10}$",AddressBook.phoneNum());
 
-        Boolean componyName = Pattern.matches("^[A-Z]{1}[a-z]{2,}",AddressBook.componyName());
+        AddressBook.compName();
+        //Here we check if the user input is Valid it get print as it is.
+        //otherwise it print invalid user input
 
         if (firstName == true) {
             System.out.println("First Name: " + fName);
@@ -100,12 +111,7 @@ public class AddressBook
         }
         else {
             System.out.println("Invalid");}
-        if (componyName == true) {
-            System.out.println("ComponyName: " + cName);
 
-        }
-        else {
-            System.out.println("Invalid");}
     }
 }
 
