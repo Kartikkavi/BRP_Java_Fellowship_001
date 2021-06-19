@@ -23,6 +23,7 @@ public class MathFunction {
         }
         return num;
     }
+    //Method to find Maximum and Minimum String from Array
     public static String MaxString(String[] array)
     {
         //Sorting an array.
@@ -34,4 +35,24 @@ public class MathFunction {
         System.out.println("Min String==="  +array[0]);
         return "";
     }
+    public static void MaxMinIntArray(int[] array)
+    {
+        int smalest =array[0];
+        int secondsmalest = array[1];
+        for (int i = 0; i < array.length; i++)
+        {
+            if (array[i] <smalest)
+            {
+                secondsmalest = smalest;
+                smalest = array[i];
+            }
+            else if(array[i] < secondsmalest && array[i]!=smalest)
+            {
+                secondsmalest=array[i];
+            }
+        }
+        System.out.println("2nd smallest value= "+secondsmalest);
+        System.out.println("1st smallest value= "+smalest);
+    }
+
 }

@@ -1,26 +1,22 @@
 //Program to find Maximum and Minimum value from Integer Array.
 package com.bridgelabz.boosterjavaprograms.day5;
+import com.bridgelabz.boosterjavaprograms.day5.Utility.MathFunction;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class MaxMinIntArray {
-    public static void main(String[] args) {
-
-        int array[] = {10, 20, 25, 63, 96, 57};
-        int smalest =array[0];
-        int secondsmalest = array[1];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] <smalest)
-
-            {
-                secondsmalest = smalest;
-                smalest = array[i];
-            }
-            else if(array[i] < secondsmalest && array[i]!=smalest)
-            {
-                secondsmalest=array[i];
-            }
+public class MaxMinIntArray
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[10];
+        System.out.println("Enter the names");
+        for (int i = 0;i < array.length;i++)
+        {
+            array[i] =scanner.nextInt();
         }
-        System.out.println("2nd smallest value"+secondsmalest);
-        System.out.println("1st smallest value"+smalest);
+        System.out.println(Arrays.toString(array));
+        MathFunction.MaxMinIntArray(array);
 
 //
 //        int array[] = {10, 20, 25, 63, 96, 57};
