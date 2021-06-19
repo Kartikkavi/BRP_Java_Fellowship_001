@@ -1,7 +1,7 @@
 // Code to check if the given two strings are an Anagram.
 package com.bridgelabz.boosterjavaprograms.day4;
 
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Anagram
