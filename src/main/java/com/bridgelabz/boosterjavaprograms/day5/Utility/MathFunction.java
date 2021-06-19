@@ -1,5 +1,7 @@
 package com.bridgelabz.boosterjavaprograms.day5.Utility;
 
+import java.util.Arrays;
+
 //Method to Check the Number is Prime or Not
 public class MathFunction {
     public static int PrimeNumber(int num){
@@ -20,5 +22,16 @@ public class MathFunction {
             System.out.println("Number is  prime number");
         }
         return num;
+    }
+    public static String MaxString(String[] array)
+    {
+        //Sorting an array.
+        //And Print sort array
+        System.out.println("Sorted Array");
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+        System.out.println("Max String==="  +array[array.length-1]);
+        System.out.println("Min String==="  +array[0]);
+        return "";
     }
 }
