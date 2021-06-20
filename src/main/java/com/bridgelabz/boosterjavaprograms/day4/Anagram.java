@@ -2,6 +2,8 @@
 package com.bridgelabz.boosterjavaprograms.day4;
 
 
+import com.bridgelabz.boosterjavaprograms.day4.Util.Utility;
+
 import java.util.Scanner;
 
 public class Anagram
@@ -17,6 +19,7 @@ public class Anagram
         String str2 = input.nextLine();
 
        Utility.Anagram(str1, str2);
+
     }
 }
 
