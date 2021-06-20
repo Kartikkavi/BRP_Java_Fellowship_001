@@ -89,4 +89,19 @@ public class MathFunction {
         System.out.println("Binary of " +number +" is :"+binary);
         return binary;
     }
+
+    //Method for sin angle calculation
+    public static double sinAngleCalculation(double number)
+    {
+        double calculation = Math.sin(number);
+        return calculation;
+    }
+    //Method for cosine angle calculation
+    public static double cosineAngle(double number)
+    {
+        double calculation = Math.cos(number);
+        return calculation;
+    }
+
+
 }
