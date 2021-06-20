@@ -103,5 +103,15 @@ public class MathFunction {
         return calculation;
     }
 
+    //Method to get Harmonic series
+    public static String HarmonicNum(int num, double result) {
+        while (num > 0) {
+            result = 0.0;
+            result = result + (double) 1 / num;
+            num--;
+            System.out.println(result + ",");
+        }
+        return "";
+    }
 
 }
