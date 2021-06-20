@@ -77,5 +77,16 @@ public class MathFunction {
         return "";
     }
 
-
+    //Method to Find Binary
+    public static String Binary(int number){
+        String binary = "";
+        int t=number;
+        while (t>0){
+            int remainder = t%2;
+            t = t/2;
+            binary= remainder+ binary;
+        }
+        System.out.println("Binary of " +number +" is :"+binary);
+        return binary;
+    }
 }
