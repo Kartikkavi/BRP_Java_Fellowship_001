@@ -7,8 +7,9 @@ public class SortEvenOdd {
         int[] Array = {1,2,3,4,5,6,7,8,9};
         int size = Array.length;
         for (int i=0;i<size;i++) {
-            System.out.println(Array[i]);
+            System.out.print(Array[i]+" ");
         }
+        System.out.println();
         System.out.println("******************************************");
 
         int temp = 0;
@@ -20,9 +21,11 @@ public class SortEvenOdd {
                     Array[i] = temp;
                 }
             }
-            System.out.println(Array[i]);
+            System.out.print(Array[i]+" ");
 
         }
+        Arrays.sort(Array,0,Array.length);
+        System.out.println(Arrays.toString(Array));
 
     }
 }

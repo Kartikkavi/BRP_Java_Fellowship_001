@@ -50,8 +50,8 @@ public class Transpose
 //            }
 //        }
 //        System.out.println("");
-       int b= matA[row][cols]*matA[cols][row];
-        System.out.println(b);
+//       int b= matA[row][cols]*matA[cols][row];
+//        System.out.println(b);
 
     }
 }

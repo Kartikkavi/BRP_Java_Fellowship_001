@@ -1,18 +1,16 @@
 //Program For ATM machine.
 package com.bridgelabz.boosterjavaprograms.exta;
-
 import java.util.Scanner;
-
 public class Atm
 {
     public static void main(String[] args)
     {
-        int Balance = 0;
+        int Balance = 1000;
         int withdraw;
         int deposit;
         Scanner sc = new Scanner(System.in);
         System.out.println("Press 1 to withdraw the amount:");
-        System.out.println("Press to deposit money:");
+        System.out.println("Press 2 deposit money:");
         System.out.println("Press 3 to Check balance:");
         System.out.println("Press 4 for Exit:");
         int choice = sc.nextInt();
@@ -34,8 +32,9 @@ public class Atm
                 break;
             case 2:
                 deposit = sc.nextInt();
+                System.out.println("Enter the amount want to Deposit");
                 Balance = Balance + deposit;
-                System.out.println(Balance);
+                System.out.println("Balance =  " +Balance);
                 break;
             case 3:
                 System.out.println("Balance =" + Balance);
